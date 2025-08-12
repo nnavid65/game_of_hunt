@@ -1,4 +1,4 @@
-class Hunter():
+class Hunter:
     def __init__(self, name, breed, move_speed, hunting_ability):
 
         self.name = name
