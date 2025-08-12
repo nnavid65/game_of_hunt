@@ -5,8 +5,8 @@ from hunter import Hunter
 
 class Game:
     def __init__(self):
-        self.width = 10
-        self.height = 10
+        self.width = 50
+        self.height = 30
 
 
 
