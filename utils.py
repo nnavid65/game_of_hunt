@@ -14,3 +14,7 @@ class Utils:
 
         for row in self.grid:
             print(' '.join(row))
+
+    def clear_grid(self):
+        """Reset the grid to empty dots."""
+        self.grid = [['.' for _ in range(self.width)] for _ in range(self.height)]

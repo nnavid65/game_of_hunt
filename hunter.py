@@ -1,4 +1,5 @@
 
+import numpy as np
 
 
 class Hunter:
@@ -12,9 +13,9 @@ class Hunter:
         self.energy = 5 # after 5 seconds is disapear
 
 
-    def move(self, dx, dy):
-        pass
-
+    def move(self, hunts, width, height):
+        self.x = (self.x + np.random.choice([-1, 0, 1])) % width
+        self.y = (self.y + np.random.choice([-1, 0, 1])) % height
     
 
     def see_hunt(self, hunts):

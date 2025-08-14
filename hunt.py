@@ -1,5 +1,7 @@
 import time
 
+import numpy as np
+
 
 class Hunt:
 
@@ -10,11 +12,12 @@ class Hunt:
         self.y = y
         self.speed = 1 # cell per 2 seconds
         self.vision = 5 # cells can be seen
-        self.timer = 1  # for production 
-    
-    def move(self, hunter, dx, dy):
-        # try to move away nearest hunter
-        pass
+        self.timer = 1  # for production
+
+    def move(self, hunters, width, height):
+        # move randomly
+        self.x = (self.x + np.random.choice([-1, 0, 1])) % width
+        self.y = (self.y + np.random.choice([-1, 0, 1])) % height
 
     def see_hunters(self, hunters):
         pass
@@ -22,4 +25,6 @@ class Hunt:
 
     def reproduce(self):
         pass
+
+
 
