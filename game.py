@@ -198,10 +198,14 @@ class Game:
             self.place_hunters_in_grid()
 
 
-            if tick % 4 == 0:  # draw every 4th tick
-                print(f"Hunts: {len(self.hunts)} | Hunters: {len(self.hunters)}")
-                print("game of hunt")
-                self.drawer.draw()
+            #if tick % 4 == 0:  # draw every 4th tick
+            print(f"Hunts: {len(self.hunts)} | Hunters: {len(self.hunters)}")
+            print("game of hunt")
+            self.drawer.draw()
+
+            if len(self.hunts) == 0 or len(self.hunters) == 0:
+                print("Game Over")
+                break
 
             time.sleep(0.1)
 
