@@ -10,7 +10,7 @@ class Hunter:
         self.y = y
         self.speed = 5  # cell per 2 seconds
         self.vision = 5  # cells can be seen
-        self.energy = 7  # after 5 seconds is disapear
+        self.energy = 10  # after 5 seconds is disapear
         self.age = 0  # for reproduction
 
 
