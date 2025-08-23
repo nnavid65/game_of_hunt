@@ -7,7 +7,7 @@ import hunter
 
 class Hunt:
 
-    Symbol = 'o'
+    Symbol = '🐑'
 
     def __init__(self, x, y):
         self.x = x

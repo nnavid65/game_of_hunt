@@ -3,7 +3,7 @@ import numpy as np
 
 
 class Hunter:
-    Symbol = '+'
+    Symbol = '🐺'
 
     def __init__(self, x, y):
         self.x = x
@@ -23,7 +23,7 @@ class Hunter:
             dy = int(np.sign(closest_hunt.y - self.y))
             new_x = (self.x + dx) % width
             new_y = (self.y + dy) % height
-            if grid[new_y][new_x] in ('.', 'o'):
+            if grid[new_y][new_x] in ('.', '🐑'):
                 self.x, self.y = new_x, new_y
         else:
             #for _ in range(self.speed):
@@ -32,7 +32,7 @@ class Hunter:
             dy = np.random.choice([-1, 0, 1])
             new_x = (self.x + dx) % width
             new_y = (self.y + dy) % height
-            if grid[new_y][new_x] in ('.', 'o'):
+            if grid[new_y][new_x] in ('.', '🐑'):
                 self.x, self.y = new_x, new_y
 
 
