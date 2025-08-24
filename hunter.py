@@ -32,7 +32,7 @@ class Hunter:
             dy = np.random.choice([-1, 0, 1])
             new_x = (self.x + dx) % width
             new_y = (self.y + dy) % height
-            if grid[new_y][new_x] in ('.', '🐑'):
+            if grid[new_y][new_x] in (' ', '🐑'):
                 self.x, self.y = new_x, new_y
 
 

@@ -42,7 +42,7 @@ class Game:
                     continue
                 nx = (parent.x + dx) % self.width
                 ny = (parent.y + dy) % self.height
-                if self.drawer.grid[ny][nx] == '.':
+                if self.drawer.grid[ny][nx] == ' ':
                     self.hunts.append(Hunt(nx, ny))
                     return
 
@@ -95,7 +95,7 @@ class Game:
                     continue
                 nx = (parent_hunter.x + dx) % self.width
                 ny = (parent_hunter.y + dy) % self.height
-                if self.drawer.grid[ny][nx] in ('.', Hunt.Symbol):
+                if self.drawer.grid[ny][nx] in (' ', Hunt.Symbol):
                     self.hunters.append(Hunter(nx, ny))
                     return
 

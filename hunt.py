@@ -29,7 +29,7 @@ class Hunt:
             step_y = int(np.sign(dy) * self.speed)
             new_x = (self.x + step_x) % width
             new_y = (self.y + step_y) % height
-            if grid[new_y][new_x] in ('.'):
+            if grid[new_y][new_x] in (' '):
                 self.x = new_x
                 self.y = new_y
         # move randomly
@@ -42,7 +42,7 @@ class Hunt:
             dy = np.random.choice([-self.speed, 0, self.speed])
             new_x = (self.x + dx) % width
             new_y = (self.y + dy) % height
-            if grid[new_y][new_x] in ('.'):
+            if grid[new_y][new_x] in (' '):
                 self.x = new_x
                 self.y = new_y
 

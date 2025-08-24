@@ -4,7 +4,7 @@ class Utils:
     def __init__(self, width, height):
         self.width = width
         self.height = height  
-        self.grid = [['.' for _ in range(width)] for _ in range(height)]  
+        self.grid = [[' ' for _ in range(width)] for _ in range(height)]  
 
     def draw(self):
         #for row in range(self.height):
@@ -17,4 +17,4 @@ class Utils:
 
     def clear_grid(self):
         """Reset the grid to empty dots."""
-        self.grid = [['.' for _ in range(self.width)] for _ in range(self.height)]
+        self.grid = [[' ' for _ in range(self.width)] for _ in range(self.height)]
